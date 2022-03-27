@@ -1,0 +1,11 @@
+---
+plain: string
+single quoted: 'string'
+double quoted: "string"
+literal: |
+  string
+trailing: |
+  spaces   
+  in a literal
+an: &ABC anchor
+evil:	tab after colon # allowed, but don't do this

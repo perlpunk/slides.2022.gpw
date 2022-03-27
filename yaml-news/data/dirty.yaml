@@ -1,0 +1,23 @@
+--- # META.yml
+configure_requires:   
+      ExtUtils::MakeMaker: '0'
+dynamic_config: 0	 
+generated_by: 'Dist::Zilla version 6.017, CPAN::Meta::Converter version 2.150010'
+license: perl
+meta-spec:
+     url: http://module-build.sourceforge.net/META-spec-v1.4.html
+     version: '1.4'
+name: YAML-PP
+provides:
+ YAML::PP:                            
+  file: lib/YAML/PP.pm
+  version: '0.032'
+ YAML::PP::Common:
+         file: lib/YAML/PP/Common.pm
+         version: '0.032'
+ YAML::PP::Constructor:
+        file: lib/YAML/PP/Constructor.pm
+        version: '0.032'
+ YAML::PP::Dumper:
+  file: lib/YAML/PP/Dumper.pm
+  version: '0.032'
