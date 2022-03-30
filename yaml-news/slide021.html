@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-store" />
+<title>The YAML Grammar as YAML</title>
+<link rel="prev" href="slide020.html" />
+<link rel="next" href="slide022.html" />
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bbslides.js"></script>
+<script src="js/navi.js"></script>
+<link rel="stylesheet" type="text/css" href="css/slides.css">
+<link rel="stylesheet" type="text/css" href="css/ansicolor.css">
+<link rel="stylesheet" type="text/css" href="css/yaml.css">
+</head>
+
+<body>
+<!--
+<div id="test"></div>
+-->
+<div id="bbslides-slide" class="bbslides-frame">
+<h1 id="node_1" class="bbslides-h1">The YAML Grammar as YAML</h1>
+<div id="node_2" class="codebox codeboxsmall">:026: b-char
+# b-char ::=
+#   b-line-feed | b-carriage-return
+
+b-char:
+  (any):
+  - b-line-feed
+  - b-carriage-return
+
+
+
+#===============================================================================
+# The (---) operator here matches if the next character is in the first range,
+# but not in any of the following ranges.
+#===============================================================================
+
+:027: nb-char
+# nb-char ::=
+#   c-printable - b-char - c-byte-order-mark
+
+nb-char:
+  (---):
+  - c-printable
+  - b-char
+  - c-byte-order-mark</div>
+</div>
+<script type="text/javascript">
+
+var prev_page = 'slide020.html';
+var next_page = 'slide022.html';
+</script>
+<div id="bbslides-navi">
+Slide 21/23
+<a href="slide020.html" onclick="previous_step();return false">BACK</a>
+<a href="index.html">UP</a>
+<a href="slide022.html" onclick="next_step(); return false">NEXT</a>
+<span id="usage">next: ( space / -&gt; / page up ) | previous: ( backspace / &lt;- / page down ) |
+next page: ( shift + page down ) | previous page: ( shift + page up ) |
+index: ( arrow-up )</span>
+
+<br>
+<progress id="slide-progress" value="21" max="23"></progress>
+</div>
+</body>
+</html>
