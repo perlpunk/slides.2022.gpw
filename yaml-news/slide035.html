@@ -2,7 +2,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="Cache-Control" content="no-store" />
-<title>YAML::Tidy .vimrc</title>
+<title>YAML::Tidy</title>
 <link rel="prev" href="slide034.html" />
 <link rel="next" href="slide036.html" />
 <script src="js/jquery-3.1.1.min.js"></script>
@@ -18,22 +18,19 @@
 <div id="test"></div>
 -->
 <div id="bbslides-slide" class="bbslides-frame">
-<h1 id="node_1" class="bbslides-h1">YAML::Tidy .vimrc</h1>
-<div id="node_2" class="codebox">&quot; Type &lt;leader&gt;yt to tidy the whole buffer
-:noremap &lt;leader&gt;yt ggvG:!yamltidy -&lt;CR&gt;
-
-&quot; Visually select lines and type &lt;leader&gt;yt.
-&quot; The first level of indentation spaces will be kept.
-:vnoremap &lt;leader&gt;yt :!yamltidy --partial -&lt;CR&gt;
-</div>
+<h1 id="node_1" class="bbslides-h1">YAML::Tidy</h1>
+<ul><li id="node_3">Supports inplace editing with --inplace</li><li id="node_4">You can use --partial to tell yamltidy that it should not change the toplevel indent</li><li id="node_5">This is useful for editor plugins</li></ul>
 </div>
 <script type="text/javascript">
+register_animation('node_3', 2, 'greyin', {});
+register_animation('node_4', 3, 'greyin', {});
+register_animation('node_5', 4, 'greyin', {});
 
 var prev_page = 'slide034.html';
 var next_page = 'slide036.html';
 </script>
 <div id="bbslides-navi">
-Slide 35/40
+Slide 35/46
 <a href="slide034.html" onclick="previous_step();return false">BACK</a>
 <a href="index.html">UP</a>
 <a href="slide036.html" onclick="next_step(); return false">NEXT</a>
@@ -42,7 +39,7 @@ next page: ( shift + page down ) | previous page: ( shift + page up ) |
 index: ( arrow-up )</span>
 
 <br>
-<progress id="slide-progress" value="35" max="40"></progress>
+<progress id="slide-progress" value="35" max="46"></progress>
 </div>
 </body>
 </html>
