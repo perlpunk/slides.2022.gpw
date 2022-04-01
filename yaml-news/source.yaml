@@ -518,19 +518,6 @@ content: |
   $include->yp($yp);[/span]
   [/codebox]
 
-
-
----
-title: YAML.pm/YAML::XS Implementation
-content: |
-  [title][/title]
-  [list]
-  [*]YAML.pm implements the whole process in Perl
-  [*]Not many possibilities to customize processing
-  [*]YAML::XS implements the whole process in C/XS
-  [*]It is using the libyaml event API, but you can not customize processing
-  [/list]
-
 ---
 title: YAML::PP Implementation
 content: |
