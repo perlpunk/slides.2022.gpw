@@ -106,21 +106,6 @@ content: |
   [/list]
 
 ---
-title: Implementation - Schema - Booleans
-content: |
-  [title][/title]
-  [h2]How many values are loaded as booleans in YAML 1.1?[/h2]
-
-  [codebox]
-  [span animation=1,appear]  true  | True  | TRUE[/span]
-  [span animation=2,appear]| false | False | FALSE[/span]
-  [span animation=3,appear]| y | Y | yes | Yes | YES[/span]
-  [span animation=4,appear]| n | N | no  | No  | NO[/span]
-  [span animation=5,appear]| on  | On  | ON[/span]
-  [span animation=6,appear]| off | Off | OFF[/span][/codebox]
-  [div animation="7,appear"][size=60][b]22![/b][/size][br][/div]
-
----
 title: YAML 1.1 Fun - Norway
 content: |
   [title][/title]
@@ -131,6 +116,15 @@ content: |
   [title][/title]
   [img=home-assistant-yaml-ontario.png]Ontario[/img]
 
+---
+title: Perl
+content: |
+  [title][/title]
+  [list animation="1,greyin"]
+  [*]In Perl, most of the modules don't load NO or ON as booleans (except YAML::Syck)
+  [*]But all modules except YAML::PP don't implement 1.1 or 1.2 correctly:
+  [*][url=https://perlpunk.github.io/YAML-PP-p5/schema-examples.html]YAML Schema Examples[/url]
+  [/list]
 ---
 title: YAML Spec
 content: |
@@ -408,6 +402,17 @@ content: |
   [codebox animation="1,appear"][include="example.yaml.html"][/codebox]
 
 ---
+title: YAML::PP::LibYAML
+content: |
+  [title][/title]
+  [list animation="1,greyin"]
+  [*][url=https://metacpan.org/pod/YAML::PP::LibYAML]YAML::PP::LibYAML[/url] uses libyaml as the parser/emitter backend
+  [*]and YAML::PP as the loader/dumper frontent
+  [*]I don't know of any production uses yet
+  [*]If you need YAML:PP plus a better performance, try it out
+  [/list]
+
+---
 title: YAML::Tidy
 content: |
   [br][br][br][br][br][br][br]
@@ -589,9 +594,6 @@ title: Links
 content: |
   [title][/title]
   [list]
-
-
-
   [*][url=http://yaml.org/]YAML.org[/url]
   [*][url=https://www.yaml.info/]A YAML Tutorial and Developer Infos[/url]
   [*][url=https://perlpunk.github.io/yaml-test-schema/schemas.html]1.1/1.2 Schema differences[/url]
@@ -607,7 +609,7 @@ content: |
   [url=https://github.com/chyh1990/yaml-rust]yaml-rust[/url],
   [url=https://github.com/neslib/Neslib.Yaml]Delphi Neslib.Yaml[/url]
   [*][url=https://github.com/yaml/yaml-grammar/]YAML Grammar[/url]
-  [*][url=https://github.com/yaml/yaml-reference-parser]YAML Refernce Parsers[/url]
+  [*][url=https://github.com/yaml/yaml-reference-parser]YAML Reference Parsers[/url]
   [*][url=https://metacpan.org/dist/YAML-Parser]YAML::Parser - Reference Parser for Perl[/url]
   [*][url=https://metacpan.org/dist/YAML-PP-Ref]YAML::PP::Ref - load data with reference parser[/url]
   [*][url=https://github.com/perlpunk/yamltidy]YAML::Tidy[/url]
